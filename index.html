@@ -1,0 +1,47 @@
+<?php
+ session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+            <div class="container">
+                <div class = "logo">
+                    <img src="images/logo.png" >
+                    <p><strong>X</strong>yz Consultancy</p>
+                </div>
+                <div class="user">
+                    
+                            <form action="login.php" method = "post">
+                                <label for="uid">Username</label>
+                                <input type="text" name="uid" placeholder="eg:john98">
+                                <label for="pwd">Password</label>
+                                <input type="password" name="pwd" placeholder="eg:pass@12">
+                                <button tyoe="submit">Login</button>
+                            </form>
+                     
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li id="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html" >About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    
+                </ul>
+            </nav>    
+    </header>
+</body>
+</html>
