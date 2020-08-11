@@ -2,20 +2,7 @@
 session_start();
 ?>
 
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>home</title>
-	<link rel="stylesheet" type="text/css" href="details.css">
-</head>
-<body>
-	<div class="homebody">
-	<a href="logout.php">logout</a>
-    <h2>welcome <?php echo $_SESSION['username'] ?> </h2>
-    
-    </div>
-</body>
-</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +12,8 @@ session_start();
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
@@ -34,36 +23,44 @@ session_start();
                     <img src="images/logo.png" >
                     <p><strong>X</strong>yz Consultancy</p>
                 </div>
-                <div class="user">
-				<div class="homebody">
-					<a href="logout.php">logout</a>
-   					 <h2>welcome <?php echo $_SESSION['username'] ?> </h2>
-				</div>
-                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa fa-user"></i>  <?php echo $_SESSION['username'] ?></button>
+                     <div class="dropdown-content">
+                     <a href="timetrack.php">time tracker</a>
+                    <a href="logout.php">logout  <i class="fa fa-sign-out"></i></a>
+                 </div>
+            </div>
             </div>
             <nav>
                 <ul>
-                    <li id="current"><a href="index.html">Home</a></li>
+                    <li id="current"><a href="home.php">Home</a></li>
                     <li><a href="login_about.php" >About us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="clients.html">Clients</a></li>
-                    <li><a href="career.html">Careers</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="login_services.php">Services</a></li>
+                    <li><a href="login_clients.php">Clients</a></li>
+                    <li><a href="login_career.php">Careers</a></li>
+                    <li><a href="login_contact.php">Contact us</a></li>
                     
                 </ul>
             </nav>    
     </header>
-    <div class="bgr">
-<h1 text-align="center">Welcome!</h1>
-<article>XYZ consultancy is an organisation with the primary focus on complete customer satisfasction
-and to provide our clients with the best possible services so as to boost their profits and help them
-adapt to the ever-changing and volatile market.
-</article>
-<article>We prioritize quality and service over everything else. Our motto is "Customer comes first" and this has been the integral part of who we are as an organisation.
+    <img src="images/stk1.jpg" id="img1" width="1525" height="400">
+        <div class="centeredx" id="bg1">
+            XYZ consultancy
+    </div>
+    <div  class="container0">
+        <h1 class="head1" >We at XYZ consultancy strive for perfection </h1>
+        <br>
+        <h4 class="head4" >Reimagine your business with a hands-on thought partner to help you define, design, and deliver results 
+</h4>
 <br>
+    <p id="tx1">
+New technologies and business models are driving companies to transform at lightning speed for a digital, customer-first world. Wipro’s Consulting practice helps business leaders respond to their customers’ needs by driving digital-first transformation: from operations to technologies to people.<br>
 <br>
-</article>
+Leading global analyst firms name us leaders in digital transformation strategy and consulting. And global Fortune 500 companies work with us because we deliver integrated strategy, digital and domain expertise, and apply analytics and insights to help them find hidden value.<br>
+<br>
+With a strong heritage of innovation and entrepreneurship in technology services, we help companies leverage the potential from digital technologies
+    </p>
 </div>
-    
+</div>
 </body>
 </html>
