@@ -4,6 +4,10 @@
 	font-family: Arial, Helvetica, sans-serif;
 	margin:0;
 }
+body
+{
+	background-color: #EEF3F5 ;
+}
 .container,.logo{
 	display:flex;
 	flex-direction:row;
@@ -126,37 +130,6 @@ nav ul li:hover {
 ::-webkit-scrollbar-thumb:hover {
   background:teal;
 }
-.bgr3
-{
-	text-align: center;
-	font-size: 40px;
-	color: aliceblue;
-	margin-left: 5%;
-	margin-right: 5%;
-	background:
-		linear-gradient(-135deg, rgb(34, 76, 152) 10%, transparent),
-		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
-		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
-	background-color: rgba(34, 76, 152, 0.25);
-	height: 500px;
-}
-.bgr4
-{
-	margin-left: 5%;
-	margin-right: 5%;
-	font-size: 40px;
-	text-align: center;
-	background-image: url("images/clients.jpg");
-}
-.bgr5
-{
-	margin-left: 5%;
-	margin-right: 5%;
-	font-size: 40px;
-	text-align: center;
-	color: aliceblue;
-	background-image: url("images/contact.png");
-}
 #imgf
 {
 	width: 500px;
@@ -198,13 +171,25 @@ h1
   font-weight: bolder;
   transform: translate(-50%, +900%);
 }
+.centeredx3 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  font-size: 70px;
+  font-weight: bold;
+  transform: translate(-130%, -280%);
+}
 #img1
 {
 	opacity: 0.8;
 }
+#ig
+{
+	opacity: 0.9;
+}
 #im
 {
-	width:1920px;
+	 background-image: url("images/stk13.jpg");
 }
 #img2
 {
@@ -218,8 +203,35 @@ h1
 {
 	margin-left: 10%;
 	margin-right: 10%;
-	background-color: #EEF3F5 ;
+	background-color: white ;
 	font-family: 'Akkurat-Italic';
+}
+.container11
+{
+	width: 45%;
+	margin-left: 10%;
+	background-color: white ;
+	font-family: 'Akkurat-Italic';
+	border-radius: 1%;
+}
+.container111
+{
+	float: right;
+	font-size: 25px;
+	width: 30%;
+	background-color: white ;
+	font-family: 'Akkurat-Italic';
+	margin-right: 5%;
+}
+#card1
+{
+	font-size: 30px;
+	color: darkblue;
+}
+#card2
+{
+	font-size: 30px;
+	color: crimson;
 }
 .head1
 {
@@ -298,4 +310,27 @@ em
 .fa-instagram {
   background: #125688;
   color: white;
+}
+#f1
+{
+padding: 1%;
+margin-left: 5%;
+}
+ul
+{
+	list-style-type: none;
+	display: inline;
+}
+li
+{
+	padding: 3%;
+	color:#1A69D5;
+	font-weight: bold;
+}	
+#logo1
+{
+	width: 50px;
+	height:50px;
+	float: left;
+	margin-right: 2%;
 }
